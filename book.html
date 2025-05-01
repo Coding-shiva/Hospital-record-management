@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medical Appointment Booking</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #1e90ff;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0077cc;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #1e90ff;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Medical Appointment Booking</h1>
+  </header>
+  <main>
+    <form id="bookingForm">
+      <div class="form-group">
+        <label for="patientName">Patient Name:</label>
+        <input type="text" id="patientName" name="patientName" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+      </div>
+      <div class="form-group">
+        <label for="appointmentType">Appointment Type:</label>
+        <select id="appointmentType" name="appointmentType" required>
+          <option value="">Select Appointment Type</option>
+          <option value="doctor">Doctor's Appointment</option>
+          <option value="lab">Lab Test</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="appointmentDate">Preferred Appointment Date:</label>
+        <input type="date" id="appointmentDate" name="appointmentDate" required>
+      </div>
+      <div class="form-group">
+        <label for="appointmentTime">Preferred Appointment Time:</label>
+        <input type="time" id="appointmentTime" name="appointmentTime" required>
+      </div>
+      <div class="form-group">
+        <label for="reason">Reason for Appointment:</label>
+        <textarea id="reason" name="reason" rows="4" required></textarea>
+      </div>
+      <button type="submit">Book Appointment</button>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vitavault</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body
+        {
+            background-color: white;
+            height: 1920px;
+            padding:0px;
+        }
+        .container{ 
+    height:200px;
+    padding-top: 200px;
+    width:100%;
+    background-color: rgb(255, 255, 255);
+}
+.navbar{
+    display:inline-block;
+}
+.navbar li {
+    float:left;
+    padding-right:300px;
+    font-size: 70px;
+    font-weight: 900%;
+    list-style: none;
+    position: relative;
+    top: -130px;
+    left: 1200px;
+    font-family: 'Open Sans', sans-serif;
+}
+#k{
+    height:70px;
+    width:530px;
+    position: relative;
+    top:9px;
+    left:-1100px;
+}
+
+.navbar li a{
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+    padding-top: 50px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.navbar li a:hover{
+    color: rgb(0, 0, 0);
+    font-size:78px;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+.image{
+    height:1800px;
+    width:90%;
+    margin-left: 200px;
+}
+#photo{
+    height:1700px;
+    width:100%;
+    border-radius: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.data{
+    height:1700px;
+    width:90%;
+    margin-left:200px;
+}
+#info{
+    height:1700px;
+    width:100%;
+    border-radius: 100px;
+    margin-top:100px;
+    margin-bottom:100px;
+}
+
+
+
+.login{
+    height:1400px;
+    width:90%;
+    margin-left:200px ;
+}
+#bg{
+    height:1620px;
+    width:100%;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    border-radius: 100px;
+
+}
+
+.box{
+    height:1000px;
+    width: 100%;
+    display:flex;
+    position: relative;
+    bottom:1000px;
+    left:5%;
+    justify-items: center;
+    align-items:center;
+}
+
+.expand{
+    height:1420px;
+    width: 100%;
+
+
+   
+}
+
+
+#logo_1{
+    height:850px;
+    width: 650px;
+    border-radius: 10%;
+    filter: drop-shadow(8px 8px 8px black);
+}
+#logo_1:hover{
+    height:900px;
+    width:700px;
+}
+#logo_2{
+    height:850px;
+    width:650px;
+    border-radius: 10%;
+    filter: drop-shadow(8px 8px 8px black);
+
+}
+#logo_2:hover{
+    height:900px;
+    width:700px;
+}
+#logo_3{
+    height:850px;
+    width:650px;
+    border-radius: 10%;
+    filter: drop-shadow(8px 8px 8px black);
+}
+#logo_3:hover{
+    height:900px;
+    width:700px;
+}
+#logo_4{
+    height:850px;
+    width:650px;
+    border-radius: 10%;
+    filter: drop-shadow(8px 8px 8px black);
+}
+#logo_4:hover{
+    height:900px;
+    width:700px;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.footerr{
+    background-color: rgb(59, 121, 191);
+    height: 700px;
+    margin-top: 700px;
+    border-radius: 0px;
+    width: 100%;
+    
+}
+
+
+.footernav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type:none;
+}
+.footernav ul li a{
+    color:white;
+    margin: 30px;
+    text-decoration: none;
+    font-size: 30px;
+    opacity:0.7;
+    transition:0.5s;
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+
+}
+.footernav ul li a:hover{
+    opacity:1;
+
+
+}
+.footerbottom{
+background-color: rgb(59, 121, 191);
+}
+.footerbottom p{
+    color: white;
+    font-size: 70px;
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+height: 10px;
+    width:100%;
+    padding-top: 380px;
+  margin-left: 1800px;
+
+}
+.Facilities{
+    color: black;
+    font-size: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    position:relative; 
+    top:450px; 
+
+}
+.searchbar{
+    width:100%;
+    height: 1000px;
+    padding:5%;
+    background-image: linear-gradient(rgba(58, 120, 190, 0.9),rgba(58, 120, 190, 0.9)), url(SEARCHBACK.png);
+    background-position: center;
+    background-size:contain;
+    display: flex;
+    justify-content: center;
+
+}
+.search{
+    width: 100%;
+    height: fit-content;
+    max-width: 3000px;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    border-radius: 250px;
+    padding: 5px 5px;
+    padding-top: 40px;
+    backdrop-filter: blur(10px) saturate(150%);
+}
+.search input{
+    background: transparent;
+    flex: 1;
+    border:1px;
+    outline: none;
+    padding: 40px 200px 60px;
+    font-size: 100px;
+    color:#ffffff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+::placeholder{
+    color: #ffffff;
+}
+.search button img{
+    width:200px;
+    height: 175px;
+}
+.search button{
+    border:0;
+    border-radius: 50%;
+    width: 400px;
+    height: 250px;
+    padding-bottom: 40px;
+    background:transparent;
+    cursor: pointer;
+
+}
+.issues{
+    height:1400px;
+    width:90%;
+    margin-left:200px ;
+}
+.ISSUEBOX{
+    height:1000px;
+    width: 100%;
+    display:flex;
+    position: relative;
+    bottom:1000px;
+    left:5%;
+    justify-items: center;
+    align-items:center;
+}
+.ISSUEEXPAND{
+    height:1420px;
+    width: 100%;
+}
+#ISSUEBG{
+    height:1620px;
+    width:100%;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    border-radius: 100px;
+}
+.PROBLEMS{
+    color: black;
+    font-size: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    text-align:left;
+    position:relative; 
+    top:400px; 
+    left: 230px;
+}
+.PROB{
+    color: black;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    text-align:left;
+    position:relative; 
+    top:470px;
+    opacity: 50%;
+    left: 230px;
+}
+#logo{
+    height:960px;
+    width: 650px;
+    border-radius: 10%;
+}
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.2;
+}
+body{
+display: flex;
+    flex-direction: column;
+    height: 1920px;
+    background-color: white;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    background-color: rgb(59, 121, 191);
+    padding: 400px 10%;
+}
+ul{
+    list-style: none;
+}
+.footer-col{
+    height: 100px;
+    width: 25%;
+    line-height: -900px;
+}
+.footer-col h4{
+    position: relative;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 100px;
+    color:white;
+    text-transform:capitalize;
+    top:-50px
+}
+.footer-col h4::before{
+    content: '';
+    position:absolute ;
+    left: 0;
+    bottom: -6px;
+    background-color: aqua;
+    height: 15px;
+    width: 200px;
+}
+ul li:not(:last-child){
+    margin-bottom: 0px;
+}
+ul li a{
+    font-size: 50px;
+    text-transform: capitalize;
+    color:#ffffff;
+text-decoration: none;
+transition: 0.4s;
+height: 300px;
+}
+.ul li a:hover{
+    color: white;
+    padding-left: 2px;
+}
+.links a{
+    display:inline block ;
+    height: 100px;
+    width:100px;
+    color: white;
+    background-color: #2882d6cc;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: -900px;
+    border-radius: 0%;
+    transition: 0.4s;
+    background: transparent;
+}
+.links a:hover{
+    color: #000000;
+    background:transparent;
+}
+.logocenter{
+    background: transparent;
+}
+#tras{
+    height: 1200px;
+    width:100%;
+    padding-left: 1500px;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <li>
+                <li><img src="VITAVAULT.png" id="k"></li>
+                <li><a href="{% url 'home' %}">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="signup.html">SIGN UP</a></li>
+                
+            </ul>
+        </nav>
+
+    </div>
+    <div class="searchbar">
+           <form action="" class="search">
+            <input type="text" placeholder="FIND YOUR DOCTOR" name="q">
+            <button type="submit"><img src="search.png"></button>
+           </form>
+    </div>
+    <div class="image">
+        <img src="BACKVITA.png" id="photo">
+
+    </div>
+    <div class="data">
+        <img src="info_1.jpg" id="info">
+    </div>
+    <div class="issues">
+        <div class="PROBLEMS">
+            <P>Consult top doctors for any health concern</P>
+        </div>
+        <div class="PROB">
+            <P>Online consultations with verified doctors in all specialities</P>
+        </div>
+        <img src="Untitled (1).png" id="ISSUEBG">
+       <div class="ISSUEBOX">
+        <div class="ISSUEEXPAND">
+            <a href="#"><img src="1.png" id="logo"></a>
+        </div>
+        <div class="ISSUEEXPAND">
+            <a href="#"><img src="2.png" id="logo"></a>
+        </div>
+        <div class="ISSUEEXPAND">
+            <a href="#"><img src="3.png" id="logo"></a>
+        </div>
+        <div class="ISSUEEXPAND">
+            <a href="#"><img src="4.png" id="logo"></a>
+        </div>
+        <div class="ISSUEEXPAND">
+            <a href="#"><img src="5.png" id="logo"></a>
+        </div>
+    </div>
+    </div>
+    <div class="login">
+        <div class="Facilities">
+            <P>🔵OUR FACILITIES🔵</P>
+        </div>
+       <img src="Untitled (1).png" id="bg">
+       <div class="box">
+        <div class="expand">
+            <a href="upload doc.html"><img src="up.png" id="logo_1"></a>
+        </div>
+        <div class="expand">
+            <a href="book.html"><img src="BOOK.png" id="logo_2"></a>
+        </div>
+        <div class="expand">
+            <a href="#"><img src="REMINDERR.png" id="logo_3"></a>
+        </div>
+        <div class="expand">
+            <a href="diet.html"><img src="NEWDIET.png" id="logo_4"></a>
+        </div>
+       </div>
+
+    </div>
+    <footer class="footerr">
+        <div class="footer-col">
+            <h4>VITAVAULT</h4>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Our Team</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>FOR PATIENT</h4>
+            <ul>
+                <li><a href="#">Search for doctor</a></li>
+                <li><a href="#">Search for clinics</a></li>
+                <li><a href="#">Search for hospitals</a></li>
+                <li><a href="#">Book diagnostic tests</a></li>
+                <li><a href="#">Book full body check ups</a></li>
+            </ul>
+        </div>                                                                                
+        <div class="footer-col">
+            <h4>MORE</h4>
+            <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Healthcare Directory</a></li>
+                <li><a href="#">Vitavault Health Wiki</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>FOLLOW US</h4>
+                  <div class="links">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/dhruva_bhardwaj?igsh=cW84dDUzbmdoOGhz"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </div>
+        </div>
+    </footer>
+</body>
+</html> 
